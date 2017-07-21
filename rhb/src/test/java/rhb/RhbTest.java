@@ -34,7 +34,7 @@ public class RhbTest {
 
 		capabilities.setCapability("chromedriverExecutable", "D://Data//driver//chromedriver.exe");
 		driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	@Test(priority = 1)
